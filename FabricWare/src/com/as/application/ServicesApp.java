@@ -8,7 +8,6 @@ import org.glassfish.jersey.server.ServerProperties;
 @ApplicationPath("/")
 public class ServicesApp extends ResourceConfig {
 	public ServicesApp() {
-		System.out.println("Hello*************************88");
 		packages("com.as.api");
 
 		// Register my custom provider - not needed if it's in my.package.
