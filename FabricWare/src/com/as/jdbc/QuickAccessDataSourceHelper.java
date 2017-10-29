@@ -49,7 +49,8 @@ public class QuickAccessDataSourceHelper {
 		try {
 			connection = DriverManager.getConnection(url);
 			PreparedStatement preparedStmt = connection.prepareStatement(query);
-			preparedStmt.setString(1, getUUID());
+			accessModel.setId(getUUID());
+			preparedStmt.setString(1, accessModel.getId());
 			preparedStmt.setString(2, accessModel.getFileurl());
 			preparedStmt.setString(3, accessModel.getLogicalgroup());
 			preparedStmt.setString(4, accessModel.getNickname());
@@ -62,7 +63,7 @@ public class QuickAccessDataSourceHelper {
 			SQLiteConnection.closeAll(connection);
 		}
 
-		return readFromDB();
+		return gson.toJson(accessModel);
 	}
 
 	public int deleteFromDb(String deletionID) {
