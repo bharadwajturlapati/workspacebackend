@@ -16,7 +16,7 @@ public class PostManSerializationTest {
 		String FILENAME = "resources/postmancollections/sample-postman-collection.json";
 		Gson gson = new Gson();
 		PostManCollection psmc = gson.fromJson(readFile(FILENAME), PostManCollection.class);
-		assertThat(psmc.getRequestList()).isNotNull();
+		assertThat(psmc.getRequests()).isNotNull();
 	}
 
 	private String readFile(String fileName) {

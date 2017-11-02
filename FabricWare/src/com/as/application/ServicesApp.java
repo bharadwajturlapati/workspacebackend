@@ -1,5 +1,4 @@
 package com.as.application;
-
 import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
@@ -18,5 +17,4 @@ public class ServicesApp extends ResourceConfig {
 		// Enable Tracing support.
 		property(ServerProperties.TRACING, "ALL");
 	}
-
 }

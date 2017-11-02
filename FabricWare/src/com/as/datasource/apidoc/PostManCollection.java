@@ -7,27 +7,27 @@ public class PostManCollection {
 	private String description;
 	private List<PostManRequestData> requests;
 
-	public String getCollectionName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setCollectionName(String collectionName) {
+	public void setName(String collectionName) {
 		this.name = collectionName;
 	}
 
-	public String getCollectionDescription() {
+	public String getDescription() {
 		return description;
 	}
 
-	public void setCollectionDescription(String collectionDescription) {
+	public void setDescription(String collectionDescription) {
 		this.description = collectionDescription;
 	}
 
-	public List<PostManRequestData> getRequestList() {
+	public List<PostManRequestData> getRequests() {
 		return requests;
 	}
 
-	public void setRequestList(List<PostManRequestData> requestList) {
+	public void setRequests(List<PostManRequestData> requestList) {
 		this.requests = requestList;
 	}
 }

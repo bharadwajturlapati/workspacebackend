@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//resources/testresources=UTF-8
+encoding//webapp/WEB-INF/webapp-resources/velocity-templates=UTF-8
 encoding/<project>=UTF-8
 encoding/src=UTF-8
 encoding/test=UTF-8

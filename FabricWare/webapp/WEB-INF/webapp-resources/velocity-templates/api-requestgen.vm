@@ -1,0 +1,36 @@
+#foreach ($request in $postManCollection.requests)
+	<section class="request-box">
+		<div class="request-method">
+			$request.method<span class="request-name">$request.name</span>
+		</div>
+		<div class="box">
+			$request.url
+		</div>
+		<div class="request-method">
+				HEADERS
+		</div>
+		<div class="box">
+			# generate headers in for loop
+			#foreach ($header in $request.headerData)
+    			#include("api-headergen.vm")
+			#end
+		</div>
+		<div class="request-method">
+			BODY
+		</div>
+		<div class="box">
+			<section class="each-header-section">
+				<div class="each-header">form-data</div>
+				<div class="each-header-desc">Description : </div>
+			</section>
+			<section class="each-header-section">
+				<div class="each-header">x-www-form-urlencoded</div>
+				<div class="each-header-desc">Description : </div>
+			</section>
+			<section class="each-header-section">
+				<div class="each-header">raw body</div>
+				<div class="each-header-desc">Description : </div>
+			</section>
+		</div>
+</section>
+#end

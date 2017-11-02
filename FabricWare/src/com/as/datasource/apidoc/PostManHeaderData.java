@@ -28,14 +28,4 @@ public class PostManHeaderData {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public String getEnabled() {
-		return enabled;
-	}
-
-	public void setEnabled(String enabled) {
-		this.enabled = enabled;
-	}
-
-	private String enabled;
 }
