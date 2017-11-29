@@ -19,7 +19,7 @@ public class PostManSerializationTest {
 		assertThat(psmc.getRequests()).isNotNull();
 	}
 
-	private String readFile(String fileName) {
+	public static String readFile(String fileName) {
 		StringBuilder resultStringBuilder = new StringBuilder();
 
 		try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {

@@ -1,5 +1,4 @@
 #foreach ($request in $postManCollection.requests)
-#if ($request) 
 	<section class="request-box">
 		<div class="request-method">
 			$request.method<span class="request-name">$request.name</span>
@@ -21,19 +20,16 @@
 		<div class="box">
 			<section class="each-header-section">
 				<div class="each-header">form-data</div>
-				<div class="each-header-desc"></div>
+				<div class="each-header-desc">Description : </div>
 			</section>
 			<section class="each-header-section">
 				<div class="each-header">x-www-form-urlencoded</div>
-				<div class="each-header-desc"></div>
+				<div class="each-header-desc">Description : </div>
 			</section>
 			<section class="each-header-section">
 				<div class="each-header">raw body</div>
-				<div class="each-header-desc">
-				#if ($request.rawModeData) $request.rawModeData #end
-				</div>
+				<div class="each-header-desc">Description : </div>
 			</section>
 		</div>
 </section>
-#end
 #end

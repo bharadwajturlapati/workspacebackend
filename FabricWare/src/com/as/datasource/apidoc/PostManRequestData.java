@@ -8,6 +8,7 @@ public class PostManRequestData {
 	private String method;
 	private String name;
 	private String description;
+	private String rawModeData;
 
 	public String getUrl() {
 		return url;
@@ -47,5 +48,13 @@ public class PostManRequestData {
 
 	public void setHeaderData(List<PostManHeaderData> headerData) {
 		this.headerData = headerData;
+	}
+
+	public String getRawModeData() {
+		return rawModeData;
+	}
+
+	public void setRawModeData(String rawModeData) {
+		this.rawModeData = rawModeData;
 	}
 }

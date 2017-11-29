@@ -1,4 +1,4 @@
 <section class="each-header-section">
-	<div class="each-header">$header.key : $header.value</div>
-	<div class="each-header-desc">Description : $header.description</div>
+	<div class="each-header"><span style="font-weight:700;">$header.key</span>&nbsp;&nbsp;&nbsp;$header.value</div>
+	<div class="each-header-desc">#if($header.description)Description : $header.description #end</div>
 </section>

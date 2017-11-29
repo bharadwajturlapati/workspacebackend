@@ -56,9 +56,12 @@
 			</resource>
 		</resources>
 		<testResources>
-		<testResource>
-			<directory>resources/testresources</directory>
-		</testResource>
+			<testResource>
+				<directory>resources/testresources</directory>
+			</testResource>
+			<testResource>
+				<directory>webapp/WEB-INF/webapp-resources/velocity-templates</directory>
+			</testResource>
 		</testResources>
 	</build>
 
